@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>BudgetNauts</title>	
+	<meta charset="utf-8">
+	<meta name = "viewport" content="device-width, initial-scale=1.0">
+
+<link href="css/bootstrap.css" rel="stylesheet">
+
+	<link href="css/menuButton.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	
+	
+</head>
+
+<body >
+	<div class= "header">
+		<div class = "dropdown">
+		 <image onclick="menu()" class = "dropbtn" src="images/settingsIcon.png"></image>
+			<div id = "drop" class = "dropdown-content">
+				<a href = "homeScreen">Home</a>
+				<a href = "/listOfSpending">List of Spending</a>
+				<a href = "#">Spending Overview</a>
+				<a href = "/budget">Budget</a>
+			</div>
+		</div>
+	</div>
+
+<div class="container">
+
+	<h1>Hi, Your Name</h1>
+	<br>
+
+	<h1>Amount Left</h1>
+    <div class="border">
+    	<h1>$137.54<h1>
+    </div>
+    <br>
+
+    <p>
+	<a href ="images/graph.png">
+      <img src="images/graph.png" alt="Pie Chart">
+    </a>
+    </p>
+</div>
+	
+<script src="./js/jquery-1.11.0.js"></script>
+	<script src="./js/bootstrap.js"></script>
+
+	<script src="./js/menuButton.js"></script>
+
+	<script src="./routes/home.js"></script> 
+	<script src="./routes/listOfSpending.js"></script> 
+	<script src="./routes/budget.js"></script>
+
+	<script src="./routes/listOfSpending.js"></script>
+
+</body>
+</html>
