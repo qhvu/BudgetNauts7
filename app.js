@@ -9,12 +9,12 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 //add routes
+var app = express();
 var index = require('./routes/index');
 var listOfSpending = require('./routes/listOfSpending');
 var add = require('./routes/add');
 var budget = require('./routes/budget')
 var homeScreen = require('./routes/homeScreen')
-var app = express();
 
 // all environments
 app.set('port', process.env.PORT || 3000);
