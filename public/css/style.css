@@ -8,6 +8,7 @@ body{
   box-shadow: 0px -20px 5px 20px #333333;
   padding: 10px;
   font-size: 0;
+
 }
 
 .navbar-nav ul {
@@ -63,6 +64,11 @@ body{
   background-color: rgba(255,255,255,0.76);
 }
 
+.responsive{
+  width: 100%;
+  height: auto;
+}
+
 table, td{
    border: 2px solid black;
    padding-top: 2.5%;
@@ -97,10 +103,6 @@ a, h1{
    color: #26545C
 }
 
-.dropdown image {
- position: relative;
-
-}
 
 #header{
   text-align: center;
@@ -165,6 +167,12 @@ a, h1{
   }
 }
 
+#button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+
 .close {
   position: absolute;
   top: 0;
@@ -175,9 +183,6 @@ a, h1{
 
 }
 
-.dropdown{
-margin-right: 40%;
-}
 
 input {
   width: 50%;
@@ -190,7 +195,6 @@ input {
   text-align: center;
 
 }
-
 
 #name{
   padding-left: 25%;

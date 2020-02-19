@@ -18,12 +18,11 @@ exports.addExpense = function(request, response) { 
 
  }
 
-//exports.removeExpense = function(request, response) {
-//	$('this'.index).hide();
-//	data.purchase.pop()
+exports.removeExpense = function(request, response) {
+	data.purchase.splice();
+	$('this'.index).splice();
 
-//}
 
-//$('.remove').click(function(){
-//	removeExpense();
-//
+}
+
+

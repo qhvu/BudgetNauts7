@@ -49,7 +49,7 @@
       	{{#each purchase}}
       	<div>
         	<tr class = "purchases">
-          	<td><img class = "remove" src="images/x.png"></img>{{date}}</td>
+          	<td><img onclick="removeExpense()" class = "remove" src="images/x.png"></img>{{date}}</td>
           	<td>{{name}}</td>
           	<td>{{category}}</td>
           	<td id="sumPrice">{{price}}</td>
