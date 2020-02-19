@@ -18,29 +18,15 @@
 <body>
 
 <div>
-
-  <nav class="navbar navbar-expand-sm bg-info navbar-dark">
-	  <!-- Brand/logo -->
-	  <a class="navbar-brand" href="/homeScreen">
-	    <img src="/images/homeIcon.png" alt="logo" style="width:40px;">
-	  </a>
-
-	  <!-- Links -->
-	  <ul class="navbar-nav">
-	    <li class="nav-item">
-	      <a class="nav-link" href="/budget">Budget</a>
-	    </li>
-	    <li class="nav-item">
-	      <a class="nav-link" href="/listOfSpending">List of Spending</a>
-	    </li>
-	    <li class="nav-item">
-	      <a class="nav-link" href="#">FAQ</a>
-	    </li>
-	  </ul>
-		<div>
-		<span>List of Spending</span>
-	</div>
-	</nav>
+   <!--nav bar-->
+   <div class = "navbar-nav">
+    <ul>
+      <li class = "nav-link"><a class="nav-link" href="/homeScreen">Home</a><div class = "underline"></div></li>
+      <li class = "nav-link"><a href="/budget">Budget</a><div class = "underline"></div></li>
+      <li class = "nav-link active-link"><a href="/listOfSpending">List of Spending</a><div class = "underline"></div></li>
+      <li class = "nav-link"><a href="#">FAQ</a><div class = "underline"></div></li>
+    </ul>
+  </div>
 
 <div style = "float:right;" class = "">
   <a href="#" id = "button" class = "button">Add Expense</a>
