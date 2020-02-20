@@ -38,6 +38,7 @@
 		}
 	],
 
-	"budget": "100",
-	"savings":"20"
+	"budget": ["500"], 
+
+	"savings":["10"]
 }
