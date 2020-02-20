@@ -7,8 +7,17 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	$('a').click(function(e) {
-    console.log("hi");
+	$('#editbutton').click(function(e){
+		e.preventDefault();
+		$.get("/edit")
 	});
+
+
 	// $('#colorBtn').click(randomizeColors);
 }
+
+function findSavings(result){
+		console.log(result);
+	var budget = document.getElementById("budget");
+	var percentage = document.getElementById("savings");[]
+};
