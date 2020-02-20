@@ -2,12 +2,16 @@ var data = require("../data.json");
 
 exports.editBudget = function(request, response) {
   var budget = request.query.budget;
-  var save = request.query.save;
+  var savings = request.query.savings;
 
-  console.log("Budget:" + budget);
+  
 
-  response.render('budget', data);
+  console.log("budget:" + budget);
 
-  var newEntry = {"budget": budget, "save": save};
-  data.editBudget.push(newEntry);
+  var newEntry = {"budget": budget, "savings": savings};
+  
+  data.push(newEntry);
+
+response.render('budget', data);
   }
+
