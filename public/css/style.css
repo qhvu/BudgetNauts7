@@ -28,7 +28,7 @@ body{
 .navbar-nav ul li a {
   color: #f5f5f5;
   text-decoration: none;
-  display: inline-block;  
+  display: inline-block;
   padding: 10px;
   transition: color 0.5s;
 }
@@ -167,11 +167,8 @@ a, h1{
   }
 }
 
-#button {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-}
+
+
 
 .close {
   position: absolute;
@@ -218,7 +215,32 @@ input {
   padding-left: 35%;
 }
 
-span{
-    font-size: 50px;
-    text-align: center;
+#savings{
+  margin-left: 10%;
+}
+
+#toSave{
+  margin-left: 10%;
+}
+#percent{
+  margin-left: 10%;
+}
+
+#edit{
+  margin-left: 10%;
+}
+
+#edit2{
+  margin-left: 20%;
+}
+
+#budget{
+
+}
+hr{
+  border: 2px solid black;
+}
+
+.inputResize{
+  width: 50%;
 }

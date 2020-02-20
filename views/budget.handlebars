@@ -8,14 +8,16 @@
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/menuButton.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<script src="js/bootstrap.js"></script>
+
+
+
 
 </head>
 
 <body>
 
 	<!--nav bar-->
+
 	 <div class = "navbar-nav">
 	  <ul>
 	  	<li class = "nav-link"><a class="nav-link" href="/homeScreen">Home</a><div class = "underline"></div></li>
@@ -24,13 +26,34 @@
 	    <li class = "nav-link"><a href="#">FAQ</a><div class = "underline"></div></li>
 	  </ul>
 	</div>
+	<a href="#" id = "button" class = "button">Edit Budget</a>
 
-<div class="container">
+	<h1 class='budget'>Total Budget: $<span id=budget>{{budget}}</span></h1>
 
+	<h1 class='budget'>Percent Saved:<span id=percent>{{save}}</span>%</h1>
+	<hr>
+	<h1 class='budget'>You will Save:$<span id="savings">0</span></h1>
 
-</div>
-<script src="./js/jquery-1.11.0.js"></script>
+	<div class = "bg-modal">
+	  <div class = "modal-content">
+	    <div class = "close">+</div>
+	    <form method = "get" action = "/edit" style="text-align: center">
+				<h3>
+					Enter your Budget here:
+	      	<input type = "text" placeholder="$" name="budget">
+				</h3>
+				<h3>
+					Enter the % you want to save here:
+					<input type = "text" placeholder="%" name="savings">
+				</h3>
+	      <input type ="submit" id = "add" class = "button"></input></a>
+	    </form>
+	  </div>
+	</div>
+
+<script src="https://code.jquery.com/jquery.js"></script>
 <script src="./js/bootstrap.js"></script>
+<script src="./js/menuButton.js"></script>
 <script src="./js/budget.js"></script>
 
 </body>

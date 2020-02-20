@@ -7,8 +7,9 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	$('a').click(function(e) {
+	$('#remove').click(function(e) {
     console.log("hi");
+		$('.purchases z')
 	});
 	// $('#colorBtn').click(randomizeColors);
 }

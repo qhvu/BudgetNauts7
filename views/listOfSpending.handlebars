@@ -8,10 +8,8 @@
   <meta name = "viewport" content="device-width, initial-scale=1.0">
 
   <link href="css/bootstrap.css" rel="stylesheet">
-
   <link href="css/menuButton.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-
 
  </head>
 
@@ -48,8 +46,8 @@
 
       	{{#each purchase}}
       	<div>
-        	<tr class = "purchases">
-          	<td><img onclick="removeExpense()" class = "remove" src="images/x.png"></img>{{date}}</td>
+        	<tr class = "purchases" id={{id}}>
+          	<td><img id = "remove" src="images/x.png"></img>{{date}}</td>
           	<td>{{name}}</td>
           	<td>{{category}}</td>
           	<td id="sumPrice">{{price}}</td>
