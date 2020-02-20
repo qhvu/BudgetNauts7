@@ -2,6 +2,7 @@ body{
   background-color: #F1B157;
 }
 
+/* navigation bar */
 .navbar-nav{
   text-align: center;
   background-color:  #8F1A24;
@@ -66,14 +67,17 @@ body{
   background-color: rgba(255,255,255,0.76);
 }
 
+/* make it mobile responsive */
 .responsive{
   width: 100%;
   height: auto;
 }
 
+/* table */
 table, td{
    border: 1px solid #ddd;
    padding-top: 2.5%;
+   padding-bottom: 2.5%;
 
  }
 
@@ -91,7 +95,7 @@ th{
 
  }
 
-
+/* make table responsive */
  @media(max-width: 500px){
   #table1 thead{
     display: none;
@@ -127,11 +131,26 @@ th{
 
  }
 
- .remove{
+/* remove button */
+.btn{
+  background-color: darkred;
+  color: white;
+  padding: 8px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.text-center{
+  text-align: center;
+  vertical-align: center;
+}
+
+.remove{
   margin-right: 10px;
   margin-bottom: 20px;
   cursor: pointer;
- }
+}
 
 .container {
 text-align: center;
@@ -165,6 +184,7 @@ a, h1{
   padding-top: 4%;
 }
 
+/* Pop up screens */
 .bg-modal{
   width: 100%;
   height: 100%;
@@ -192,6 +212,7 @@ a, h1{
   align-items: center;
 }
 
+/* buttons */
 .button {
   background-color: #26545C;
   border: 2px solid white;

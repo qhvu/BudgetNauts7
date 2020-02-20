@@ -1,7 +1,7 @@
 var data = require("../data.json");
 
+// add expense
 exports.addExpense = function(request, response) {    
-	// Your code goes here
 	var date = request.query.date;
 	var name = request.query.name;
 	var category = request.query.category;
@@ -18,11 +18,6 @@ exports.addExpense = function(request, response) { 
 
  }
 
-exports.removeExpense = function(request, response) {
-	data.purchase.splice();
-	$('this'.index).splice();
 
-
-}
 
 

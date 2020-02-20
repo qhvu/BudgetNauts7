@@ -33,25 +33,29 @@
 </div>
 </div>
 
-<div class="container" id = "table">
+<div class="container">
     <table class='table-striped ' id = "table1">
       <thead>
- 
+          
+          <th>ID</th>
           <th>Date</th>
           <th>Name</th>
           <th>Category</th>
           <th>Price</th>
+          <th>Remove</th>
 
       </thead>
 
       <tbody>
       	{{#each purchase}}
       	<div>
-        	<tr class = "purchases">
-          	<td data-label = "Date"><img onclick="removeExpense()" class = "remove" src="images/x.png"></img>{{date}}</td>
+        	<tr class = "purchases" id = "{{@index}}">
+            <td data-label = "ID">{{@index}}</td>
+          	<td data-label = "Date">{{date}}</td>
           	<td data-label = "Name">{{name}}</td>
           	<td data-label = "Category">{{category}}</td>
           	<td data-label = "Price">{{price}}</td>
+            <td class = "text-center"><button type = "button" class = "btn">Remove</button></td>
         	</tr>
     	</div>
         {{/each}}
@@ -75,8 +79,10 @@
 </div>
 
 <script src="./js/jquery-1.11.0.js"></script>
+<!--<script src="./js/jquery.min.js"></script>-->
 <script src="./js/bootstrap.js"></script>
 <script src="./js/menuButton.js"></script>
+
 <script src="./js/index.js"></script>
 
 </body>
