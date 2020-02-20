@@ -9,5 +9,5 @@ exports.editBudget = function(request, response) {
   response.render('budget', data);
 
   var newEntry = {"budget": budget, "save": save};
-  data.listOfBudget.push(newEntry);
+  data.editBudget.push(newEntry);
   }

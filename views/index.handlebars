@@ -19,6 +19,8 @@
 <br>
 <div class = "login">
 	<a href="#" id = "button" class = "button">LOGIN</a>
+	<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button>
 </div>
 
 	<br>
@@ -51,6 +53,7 @@
 	<script src="./js/bootstrap.js"></script>
 	<script src="./js/menuButton.js"></script>
 	<script src="./js/index.js"></script>
-
+	{{> facebook}}
+	<script src="/js/facebook.js"></script>
 </body>
 </html>
