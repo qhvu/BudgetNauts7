@@ -91,7 +91,8 @@ th{
    margin-left: 10%;
    margin-right: 15%;
    margin-top: 20px;
-   background-color: #f1f1f1
+   background-color: #f1f1f1;
+
 
  }
 
@@ -227,12 +228,14 @@ a, h1{
     color: #26545C;
     border: 2px #26545C;
   }
+
 }
 
 #button {
   position: fixed;
   bottom: 10px;
   right: 10px;
+  z-index: 1;
 }
 
 .close {
