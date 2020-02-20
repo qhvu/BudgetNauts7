@@ -67,6 +67,10 @@ body{
   background-color: rgba(255,255,255,0.76);
 }
 
+.navbar-nav .nav-link{
+  padding-left: 7px;
+}
+
 /* make it mobile responsive */
 .responsive{
   width: 100%;
