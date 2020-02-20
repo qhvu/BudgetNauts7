@@ -15,7 +15,9 @@ var listOfSpending = require('./routes/listOfSpending');
 var add = require('./routes/add');
 var budget = require('./routes/budget')
 var homeScreen = require('./routes/homeScreen')
+var faq = require('./routes/faq')
 var edit = require('./routes/edit');
+
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -47,6 +49,7 @@ app.get('/listofSpending', listOfSpending.view);
 app.get('/add', add.addExpense);
 app.get('/budget', budget.view);
 app.get('/homeScreen', homeScreen.view);
+app.get('/faq', faq.view);
 app.get('/edit', edit.editBudget);
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
