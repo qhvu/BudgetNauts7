@@ -1,6 +1,5 @@
 
-
-//pop up modal
+//pop up modal: home
 document.getElementById('button').addEventListener('click', function() {
   document.querySelector('.bg-modal').style.display = 'flex';
 });
@@ -9,16 +8,50 @@ document.querySelector('.close').addEventListener('click', function() {
   document.querySelector('.bg-modal').style.display = 'none';
 });
 
-//remove expense item (not working)
-$(document).on('click','.btn', function() {
-	$(this).closest('tr').remove();
+
+//pop up modal: list of spending
+/*document.getElementById('LOFbutton').addEventListener('click', function() {
+  document.querySelector('.bg-modal').style.display = 'flex';
 });
+*/
+
+
+
+//remove expense item (not working)
+
+//'use strict';
+
+/*
+$(document).ready(function() {
+	console.log("Testing");
+	$('.btn').click(testing);
+})
+
+function testing() {
+	console.log("Successful");
+}
+
+/*
+
+$(document).ready(function() {
+	$('.purchases.btn').on('click', function(e) {
+		console.log("REMOVE");
+		e.preventDefault();
+		$(this).closest('tr').remove();	
+	});
+})
+*/
+
 
 //nav bar animation underline
-$('.nav-link').on('click', function() {
+$('.nav-link').on('click', function(e) {
+	//e.preventDefault();
   $('.active-link').removeClass('active-link');
   $(this).addClass('active-link');
+  console.log("REMOVE");
 });
+
+
 
 /*var index, table = document.getElementById('table1');
 for (var i = 1; i < table.rows.length; i++){
