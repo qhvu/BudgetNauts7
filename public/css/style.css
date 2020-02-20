@@ -72,12 +72,14 @@ body{
 }
 
 table, td{
-   border: 2px solid black;
+   border: 1px solid #ddd;
    padding-top: 2.5%;
+
  }
 
+
 th{
-  padding-left: 90px;
+  vertical-align: middle;
 }
 
  table#table1{
@@ -86,6 +88,42 @@ th{
    margin-right: 15%;
    margin-top: 20px;
    background-color: #f1f1f1
+
+ }
+
+
+ @media(max-width: 500px){
+  #table1 thead{
+    display: none;
+  }
+
+  #table1, #table1 tbody, #table1 tr, #table1 td{
+    display: block;
+    width: 100%;
+
+  }
+  
+  #table1 tr{
+    margin-bottom: 15px;
+  }
+
+  #table1 td{
+    text-align: right;
+    padding-left: 50%;
+    text-align: right;
+    position: relative;
+  }
+
+  #table1 td::before{
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    width: 50%;
+    padding-left: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: left;
+  }
 
  }
 
