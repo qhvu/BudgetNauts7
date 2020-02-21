@@ -1,13 +1,13 @@
-var data = require("../budget.json");
+var data = require("../budgetTotal.json");
 
 exports.editBudget = function(request, response) {
-  var budget = request.query.budget;
-  var save = request.query.save;
+  var budgetTotal = request.query.budgetTotal;
+  var percent = request.query.percent;
 
-  console.log("Budget:" + budget);
+  console.log("Budget:" + budgetTotal);
 
   response.render('budget', data);
 
-  var newEntry = {"budget": budget, "save": save};
-  data.editBudget.push(newEntry);
+  var newEntry = {"budget": budgetTotal, "save": percent};
+  data.budgetTotal.push(newEntry);
   }

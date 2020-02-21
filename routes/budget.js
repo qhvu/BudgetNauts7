@@ -1,10 +1,7 @@
 // Get all of our friend data
-var data = require('../budget.json');
+var data = require('../budgetTotal.json');
 
 exports.view = function(request, response){
 	console.log(data);
-	response.render('budget', {
-				"budgetTotal": "0.00",
-	      "savings":"50"
-			});
-	}
+	response.render('budget', data);
+};

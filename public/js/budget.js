@@ -11,13 +11,11 @@ function initializePage() {
 		e.preventDefault();
 		$.get("/edit")
 	});
-
-
-	// $('#colorBtn').click(randomizeColors);
-}
+	$('#savings').html("0");
+};
 
 function findSavings(result){
 		console.log(result);
 	var budget = document.getElementById("budget");
-	var percentage = document.getElementById("savings");[]
+	var percentage = document.getElementById("percent");[]
 };
