@@ -1,4 +1,4 @@
-var data = require("../data.json");
+var data = require("../budget.json");
 
 exports.editBudget = function(request, response) {
   var budget = request.query.budget;
