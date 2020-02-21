@@ -40,21 +40,31 @@
           <th>Name</th>
           <th>Category</th>
           <th>Price</th>
-          <th>Remove</th>
+          <!--<th>Remove</th>-->
 
       </thead>
 
       <tbody>
+<<<<<<< HEAD
 
       	<div>
           	{{#each purchase}}
           <tr>
+=======
+      	{{#each purchase}}
+        
+>>>>>>> ca1e1dd62d67454fa3dded5d2a1d0f76251af072
             <td data-label = "ID">{{@index}}</td>
           	<td data-label = "Date">{{date}}</td>
           	<td data-label = "Name">{{name}}</td>
           	<td data-label = "Category">{{category}}</td>
           	<td data-label = "Price">${{price}}</td>
+<<<<<<< HEAD
             <td class = "text-center"><a href="#" id="removeButton" class = "button2">Remove</a></td>
+=======
+            <!--<td class = "text-center"><button type = "button" class = "btn">Remove</button></td>-->
+        
+>>>>>>> ca1e1dd62d67454fa3dded5d2a1d0f76251af072
         	</tr>
       {{/each}}
     	</div>
