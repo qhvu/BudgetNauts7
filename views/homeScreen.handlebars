@@ -57,6 +57,13 @@
 		 	 Money Leftover
 	  </div>
 	 </div>
+	 	{{#each purchase}}
+		<div class="progress">
+			<div class="progress-bar bg-primary" id={{@index}} style="width:40%">
+				{{category}}
+			</div>
+		</div>
+		{{/each}}
     <p>
 	<a>
       <img src="images/Frame 26.png" class = "responsive">
