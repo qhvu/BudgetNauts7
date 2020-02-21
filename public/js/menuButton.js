@@ -42,6 +42,11 @@ $(document).ready(function() {
 })
 */
 
+$('#table1').on("click", "td", function(){
+	alert('clicked');
+	$(this).closest('tr').remove();
+	console.log('clicked');
+});
 
 //nav bar animation underline
 $('.nav-link').on('click', function(e) {

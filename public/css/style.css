@@ -1,5 +1,6 @@
 body{
   background-color: #F1B157;
+
 }
 
 /* navigation bar */
@@ -16,7 +17,8 @@ body{
 
 .navbar-nav ul {
   margin: 0;
-  padding-left: 2%;
+  padding-left: 0%;
+ 
   text-align: left;
   display: inline-block;
   vertical-align: middle;
@@ -100,8 +102,10 @@ th{
 
  }
 
+
 /* make table responsive */
- @media(max-width: 500px){
+
+ @media(max-width: 340px){
   #table1 thead{
     display: none;
   }
@@ -109,6 +113,7 @@ th{
   #table1, #table1 tbody, #table1 tr, #table1 td{
     display: block;
     width: 100%;
+    top:0;
 
   }
 
@@ -134,7 +139,12 @@ th{
     text-align: left;
   }
 
+  .navbar-nav ul li {
+    font-size: 12px;
+  }
+
  }
+
 
 /* remove button */
 .btn{
@@ -206,7 +216,8 @@ border: 5px solid black;
 
 .login{
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  padding-left: 5%;
   align-items: center;
 }
 
