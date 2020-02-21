@@ -10,7 +10,7 @@ exports.editBudget = function(request, response) {
 
   //edit value to most recent (percentage of savings)
   data.savings[0] = savings;
-  
+
   //edit value to most recent (savings)
   var save = data.budget[0] * (data.savings[0]/100);
 

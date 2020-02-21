@@ -1,7 +1,7 @@
 var data = require("../data.json");
 
 // add expense
-exports.addExpense = function(request, response) {    
+exports.addExpense = function(request, response) { 
 	var date = request.query.date;
 	var name = request.query.name;
 	var category = request.query.category;
@@ -12,19 +12,9 @@ exports.addExpense = function(request, response) { 
 
 	var newEntry = {"date": date, "name": name, "category": category, "price": price};
 
-	//find leftover value 
-	var priceSum = data.purchase.map(purchase => purchase.price).reduce((acc, price) => bill + acc);
-	console.log(priceSum)
-
-	var leftover = data.budget[0] - priceSum;
-	data.leftover[0] = leftover; 
 
 	data.purchase.push(newEntry);
 
 	response.render('listOfSpending', data);
 
  }
-
-
-
-
