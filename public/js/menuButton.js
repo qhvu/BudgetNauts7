@@ -43,7 +43,7 @@ $(document).ready(function() {
 */
 
 $('#table1').on("click", "td", function(){
-	alert('clicked');
+	//alert('clicked');
 	$(this).closest('tr').remove();
 	console.log('clicked');
 });

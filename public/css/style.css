@@ -11,6 +11,7 @@ body{
   padding: 10px;
   font-size: 0;
   position: sticky;
+  z-index: 2;
   top:0;
 
 }
@@ -105,7 +106,7 @@ th{
 
 /* make table responsive */
 
- @media(max-width: 340px){
+ @media(max-width: 360px){
   #table1 thead{
     display: none;
   }

@@ -26,6 +26,7 @@ function amountLeft(result){
 	}
 	var budget = result['budget'];
 	var percentage = result["savings"]/100;
+
 	var amountLeft = budget - (sum*percentage) - sum;
 	console.log(sum);
 	console.log(budget);
