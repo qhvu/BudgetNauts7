@@ -11,7 +11,9 @@ function initializePage() {
 	$('a').click(function(e) {
 		console.log("hi");
 	});
- $.get('/data', amountLeft)
+ $.get('/data', amountLeft);
+ $("#progress-bar").css("width", "50%");
+ $("#progress-bar").attr("aria-valuenow", "50%");
  }
 
 function amountLeft(result){
@@ -24,9 +26,10 @@ function amountLeft(result){
 	}
 	var budget = result['budget'];
 	var percentage = result["savings"]/100;
-	var amountLeft = budget - sum*percentage - sum;
+	var amountLeft = budget - (sum*percentage) - sum;
 	console.log(sum);
 	console.log(budget);
+	console.log(percentage);
 	console.log(amountLeft);
 	$('#borderLeftover').html('$'+amountLeft);
 	}

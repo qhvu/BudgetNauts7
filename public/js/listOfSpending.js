@@ -10,5 +10,11 @@ function initializePage() {
 	$('a').click(function(e) {
     console.log("hi");
 	});
-	// $('#colorBtn').click(randomizeColors);
+	$('tbody').on('click', 'input[type="button"]', function(e){
+	   $(this).closest('tr').remove()
+	})
+}
+
+function remove(){
+	console.log("does this work?");
 }
