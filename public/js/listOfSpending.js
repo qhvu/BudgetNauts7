@@ -10,10 +10,15 @@ function initializePage() {
 	$('a').click(function(e) {
     console.log("hi");
 	});
-	$('.button2').click(removeRow);
+	$('#remove').click(function(e){
+		$.get("/data",removeRow);
+	});
 }
 
-function removeRow(){
-	console.log('test');
-
+function removeRow(result){
+	console.log(result);
+	var purchases = result['purchase'];
+	console.log(purchases);
+	purchases[purchases]
+	purchases.splice()
 }
