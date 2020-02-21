@@ -10,11 +10,18 @@ exports.addExpense = function(request, response) { 
 
 	console.log("name:" + name);
 
-	response.render('listOfSpending', data);
-
 	var newEntry = {"date": date, "name": name, "category": category, "price": price};
 
+	//find leftover value 
+	var priceSum = data.purchase.map(purchase => purchase.price).reduce((acc, price) => bill + acc);
+	console.log(priceSum)
+
+	var leftover = data.budget[0] - priceSum;
+	data.leftover[0] = leftover; 
+
 	data.purchase.push(newEntry);
+
+	response.render('listOfSpending', data);
 
  }
 
