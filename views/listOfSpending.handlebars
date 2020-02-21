@@ -17,7 +17,6 @@
 
 <body>
 
-<div>
    <!--nav bar-->
    <div class = "navbar-nav">
     <ul>
@@ -28,7 +27,6 @@
     </ul>
   </div>
 
-  <div class="container">
 
     <div style = "float:right;" class = "">
       <a href="#" id = "button" class = "button">Add Expense</a>
@@ -47,21 +45,22 @@
       </thead>
 
       <tbody>
-      	{{#each purchase}}
+
       	<div>
+          	{{#each purchase}}
+          <tr>
             <td data-label = "ID">{{@index}}</td>
           	<td data-label = "Date">{{date}}</td>
           	<td data-label = "Name">{{name}}</td>
           	<td data-label = "Category">{{category}}</td>
           	<td data-label = "Price">${{price}}</td>
-            <td class = "text-center"><a href="#" class="btn btn-info" role="button">Remove</a></td>
+            <td class = "text-center"><a href="#" id="removeButton" class = "button2">Remove</a></td>
         	</tr>
+      {{/each}}
     	</div>
-        {{/each}}
 
       </tbody>
     </table>
-</div>
 
 <div class = "bg-modal">
   <div class = "modal-content">
@@ -76,8 +75,6 @@
     </form>
   </div>
 </div>
-</div>
-
 
 <script src="https://code.jquery.com/jquery.js"></script>
 <!--<script src="./js/jquery.min.js"></script>-->
