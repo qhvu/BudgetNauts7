@@ -10,11 +10,10 @@ function initializePage() {
 	$('a').click(function(e) {
     console.log("hi");
 	});
-	$('tbody').on('click', 'input[type="button"]', function(e){
-	   $(this).closest('tr').remove()
-	})
+	$('.button2').click(removeRow);
 }
 
-function remove(){
-	console.log("does this work?");
+function removeRow(){
+	console.log('test');
+
 }
