@@ -11,14 +11,24 @@ function initializePage() {
 	$('a').click(function(e) {
 		console.log("hi");
 	});
- $.get('/listOfSpending',amountLeft)
+ $.get('/data', amountLeft)
  }
 
 function amountLeft(result){
 	console.log(result);
 	var sum = 0;
-
-	$('#leftOver').html('$' +sum);
+	var price =result['purchase'];
+	var i;
+	for(i = 0; i < price.length; i++){
+		sum += parseInt(price[i].price);
+	}
+	var budget = result['budget'];
+	var percentage = result["savings"]/100;
+	var amountLeft = budget - sum*percentage - sum;
+	console.log(sum);
+	console.log(budget);
+	console.log(amountLeft);
+	$('#borderLeftover').html(amountLeft);
 	}
 
 	// $('#colorBtn').click(randomizeColors);
