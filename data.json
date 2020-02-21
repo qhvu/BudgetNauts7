@@ -36,5 +36,9 @@
 			"category": "Clothing",
 			"price": "$15"
 		}
-	]
+	],
+
+	"budget": ["500"],
+
+	"savings":["10"]
 }
