@@ -5,12 +5,14 @@
 			"name": "T-shirt",
 			"category": "Clothing",
 			"price": 25			
+
 		},
 		{
 			"date": "2/1/2020",
 			"name": "Sushi",
 			"category": "Food",
 			"price": 30
+
 		},
 		{
 			"date": "2/2/2020",
@@ -23,6 +25,7 @@
 			"name": "Electric",
 			"category": "Utilities",
 			"price": 50
+
 		},
 		{
 			"date": "2/5/2020",
@@ -46,3 +49,4 @@
 
 	"leftover": [307.75]
 }
+

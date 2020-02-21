@@ -11,13 +11,18 @@ function initializePage() {
 		e.preventDefault();
 		$.get("/edit")
 	});
-
-
-	// $('#colorBtn').click(randomizeColors);
-}
+	$('#projectedSavings').html(function(e){
+		$.get('/data',findSavings);
+	})
+};
 
 function findSavings(result){
 		console.log(result);
-	var budget = document.getElementById("budget");
-	var percentage = document.getElementById("savings");[]
+		var budget = result['budget'];
+		var percentage = result['savings']/100;
+		var total = budget * percentage;
+		console.log(budget);
+		console.log(percentage);
+		console.log(total);
+		$('#projectedSavings').html(total);
 };
