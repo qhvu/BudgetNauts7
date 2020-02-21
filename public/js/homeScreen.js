@@ -28,7 +28,7 @@ function amountLeft(result){
 	console.log(sum);
 	console.log(budget);
 	console.log(amountLeft);
-	$('#borderLeftover').html(amountLeft);
+	$('#borderLeftover').html('$'+amountLeft);
 	}
 
 	// $('#colorBtn').click(randomizeColors);
