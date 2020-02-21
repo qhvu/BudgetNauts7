@@ -280,6 +280,12 @@ input {
   padding-left: 35%;
 }
 
+.budgetText h1{
+  text-align: center;
+  vertical-align: center;
+
+}
+
 span{
     font-size: 50px;
     text-align: center;
@@ -287,4 +293,5 @@ span{
 
 hr{
   border: 2px solid black;
+  width: 30%
 }
