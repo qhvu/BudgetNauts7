@@ -17,6 +17,7 @@
 
 <body>
 
+<div>
    <!--nav bar-->
    <div class = "navbar-nav">
     <ul>
@@ -26,6 +27,7 @@
       <li class = "nav-link"><a href="/faq">FAQ</a><div class = "underline"></div></li>
     </ul>
   </div>
+
 
 
     <div style = "float:right;" class = "">
@@ -45,32 +47,22 @@
       </thead>
 
       <tbody>
-<<<<<<< HEAD
-
-      	<div>
-          	{{#each purchase}}
-          <tr>
-=======
       	{{#each purchase}}
-        
->>>>>>> ca1e1dd62d67454fa3dded5d2a1d0f76251af072
+
             <td data-label = "ID">{{@index}}</td>
           	<td data-label = "Date">{{date}}</td>
           	<td data-label = "Name">{{name}}</td>
           	<td data-label = "Category">{{category}}</td>
           	<td data-label = "Price">${{price}}</td>
-<<<<<<< HEAD
-            <td class = "text-center"><a href="#" id="removeButton" class = "button2">Remove</a></td>
-=======
-            <!--<td class = "text-center"><button type = "button" class = "btn">Remove</button></td>-->
-        
->>>>>>> ca1e1dd62d67454fa3dded5d2a1d0f76251af072
+            <td class = "text-center"><button type = "button" class = "btn">Remove</button></td>
+
         	</tr>
-      {{/each}}
     	</div>
+        {{/each}}
 
       </tbody>
     </table>
+</div>
 
 <div class = "bg-modal">
   <div class = "modal-content">
@@ -81,7 +73,7 @@
       <input type = "text" placeholder="Name" name="name">
       <input type = "text" placeholder="Category" name="category">
       <input type = "text" placeholder="Price" name="price">
-      <input type ="submit" id = "add" class = "button"></a>
+      <input type ="submit" id = "add" class = "button">
     </form>
   </div>
 </div>
