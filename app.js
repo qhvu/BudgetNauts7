@@ -17,7 +17,7 @@ var budget = require('./routes/budget')
 var homeScreen = require('./routes/homeScreen')
 var faq = require('./routes/faq')
 var edit = require('./routes/edit')
-
+var data = require('./routes/data')
 
 
 // all environments
@@ -49,6 +49,7 @@ app.get('/listofSpending', listOfSpending.view);
 // Example route
 app.get('/add', add.addExpense);
 app.get('/budget', budget.view);
+app.get('/data',data.dataInfo);
 //app.get('/budgetTotal', budgetTotal.budgetInfo);
 app.get('/homeScreen', homeScreen.view);
 app.get('/faq', faq.view);

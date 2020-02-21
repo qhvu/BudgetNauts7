@@ -11,11 +11,18 @@ function initializePage() {
 		e.preventDefault();
 		$.get("/edit")
 	});
-	$('#savings').html("0");
+	$('#projectedSavings').html(function(e){
+		$.get('/data',findSavings);
+	})
 };
 
 function findSavings(result){
 		console.log(result);
-	var budget = document.getElementById("budget");
-	var percentage = document.getElementById("percent");[]
+		var budget = result['budget'];
+		var percentage = result['savings']/100;
+		var total = budget * percentage;
+		console.log(budget);
+		console.log(percentage);
+		console.log(total);
+		$('#projectedSavings').html(total);
 };
